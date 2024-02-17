@@ -5,6 +5,10 @@ import { Injectable, Logger } from "danet/mod.ts";
 export class TemplateService implements OnAppBootstrap, OnAppClose {
   private logger = new Logger();
 
+  greetings(name?: string) {
+    return `Hello, ${name ?? "world"}`;
+  }
+
   onAppBootstrap(): void | Promise<void> {
     this.logger.log("initializing my module");
   }

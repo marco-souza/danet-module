@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "run-example": "deno run --watch --allow-net --allow-read --allow-env example/run.ts"
+    "run-example": "deno run --watch --allow-net --allow-read --allow-env example/run.ts",
+    "tests": "deno test --allow-net --allow-read --allow-env"
   },
   "imports": {
     "danet/": "https://deno.land/x/danet@2.0.1/"
