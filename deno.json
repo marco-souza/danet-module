@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "danet/": "https://deno.land/x/danet@2.0.1/"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["require-await"]
+    }
+  },
+  "fmt": {
+    "options": {
+      "singleQuote": false
+    }
+  },
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
